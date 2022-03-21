@@ -270,8 +270,27 @@ main {
     margin: 0 0.4em 2.5em 0.4em;
 }
 
+.song-container img {
+    position: relative;
+}
+
+/* .song-container img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+} 
+
+    layover non funzionante
+
+*/
+
 .song-container-rounded img {
     border-radius: 50%;
+    position: relative;
 }
 
 .song-container:first-child {
@@ -294,11 +313,32 @@ main {
 footer {
     position: relative;
     z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #313131;
-    
-    /* test */
     height: 110px;
+}
+
+.col-sx {
+    margin-left: 1em;
+    width: 100px;
+    height: 60px;
+
+    background-color: red;
+}
+
+.col-mid {
+    width: 100px;
+    height: 60px;
+    background-color: green;
+}
+
+.col-dx {
+    width: 100px;
+    height: 60px;
+    background-color: blue;
 }
 
 
