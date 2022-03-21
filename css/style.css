@@ -19,13 +19,14 @@ html {
     font-size: 2.3em;
     font-weight: 700;
     color: white;
-    margin-bottom: .8em;
+    margin-bottom: .5em;
 }
 
 .song-title {
     font-weight: 700;
     color: white;
     margin-bottom: .8em;
+    text-align: center;
 }
 
 a {
@@ -258,13 +259,33 @@ main {
     flex-direction: column;
     align-items: center;
     width: 250px;
-    height: 350px;
+    margin: 0 0.4em 2.5em 0.4em;
+}
+
+.song-container-rounded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 0 0.4em 2.5em 0.4em;
+}
+
+.song-container-rounded img {
+    border-radius: 50%;
+}
+
+.song-container:first-child {
+    margin: 0 0.4em 2.5em 0em;
 }
 
 .row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.for-john p {
+    margin-bottom: 1em;
 }
 
 /* /MAIN E SIDEBAR */
