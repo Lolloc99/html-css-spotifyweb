@@ -10,6 +10,55 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* HEADER */
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+
+    /* test */
+    width: calc(100% - 270px);
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 87vh;
+}
+/* SIDEBAR */
+#sidebar {
+    display: flex;
+    align-items: flex-start;
+    background-color: black;
+
+    /* test */
+    height: 87vh;
+    width: 270px;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    align-items: flex-start;
+    width: calc(100% - 270px);
+    background-color: #23272f;
+
+    /* test */
+    height: 87vh;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #313131;
+    
+    /* test */
+    height: 13vh;
+}
+
 
 /* 
 Colori
