@@ -430,7 +430,8 @@ footer {
     width: 30%;
 }
 
-.icon-bar {
+.icon-bar,
+.icon-bar-2 {
     width: 200px;
     display: flex;
     align-items: center;
@@ -438,17 +439,26 @@ footer {
     margin-bottom: 1em;
 }
 
-.icon-bar i {
+.icon-bar-2 {
+    display: none;
+}
+
+.icon-bar i,
+.icon-bar-2 i{
     font-size: 20px;
     color: white;
 }
 
-#play i{
+#play i {
     font-size: 35px;
 }
 
 #play i:hover {
     transform: scale(1.1);
+}
+
+#play i:active{
+    color: green;
 }
 
 .timer {
@@ -460,14 +470,10 @@ footer {
 .progress-bar {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 25px;
-}
-
-.progress-bar {
-    display: flex;
     align-items: center;
     flex-direction: row;
+    width: 100%;
+    height: 25px;
 }
 
 #progress-bar {
@@ -511,6 +517,21 @@ footer {
     background-color: #c4c4c4;
     border-radius: 5px;
 }
+
+.progress-bar-2 {
+    display: none;
+    flex-direction: row;
+    width: 50%;
+    height: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#slash {
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
 /* /Col Middle */
 
 /* Col Dx */
@@ -551,11 +572,6 @@ footer {
     background-color: #91df1c;
 }
 
-.volume {
-    display: flex;
-    align-items: center;
-}
-
 .range-vol {
     display: none;
     position: absolute;
@@ -568,6 +584,66 @@ footer {
 
 #volume-bar:hover .range-vol {
     display: inline-block;
+}
+
+/* Alternativa */
+.vol-alt {
+    display: none;
+}
+
+.vol-btn {
+    position: relative;
+}
+
+.bar-bg {
+    position: absolute;
+    top: -121px;
+    left: -5px;
+    width: 25px;
+    height: 113px;
+    border: 3px solid black;
+    background-color: #292929;
+    border-radius: 5px;
+}
+
+.alt-vol-bar {
+    display: none;
+}
+
+.vol-btn:hover .alt-vol-bar {
+    display: inline;
+}
+
+.progress-bar-alt {
+    position: absolute;
+    top: -115px;
+    left: 5px;
+    width: 5px;
+    height: 100px;
+    border: 1px solid #5f5f5f;
+    background-color: #5f5f5f;
+    border-radius: 5px;
+}
+
+.bar-progress-alt {
+    position: absolute;
+    top: -45px;
+    left: 5px;
+    width: 5px;
+    height: 30px;
+    border: 1px solid #c4c4c4;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+.range-vol-alt {
+    display: none;
+    position: absolute;
+    top: -51px;
+    left: 1px;
+    border: 6.5px solid white;
+    background-color: white;
+    border-radius: 50%;
 }
 /* /Col Dx */
 
@@ -594,6 +670,10 @@ footer {
 
     .song-container {
         width: calc(100% / 2 - 0.8em);
+    }
+
+    .col-dx {
+        flex-direction: column;
     }
 }
 
@@ -666,13 +746,34 @@ footer {
     .install-app img {
         margin: 0;
     }
+}
 
+/* footer */
+@media screen and (max-width: 600px) {
+    
     .icon {
         flex-direction: column;
     }
 
     .col-dx {
-        flex-direction: column;
+        width: 50px;
+        padding: 0 5em;
+    }
+
+    .icon-bar-2 {
+        display: flex;
+    }
+
+    .icon-bar,
+    .progress-bar,
+    #progress-bar,
+    #volume-bar,
+    .none {
+        display: none;
+    }
+
+    .vol-alt {
+        display: inline-block;
     }
 }
 /* /MEDIA QUERY */

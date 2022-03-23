@@ -238,6 +238,9 @@
                 <i class="fas fa-step-forward"></i>
                 <i class="fas fa-redo-alt"></i>
             </div>
+            <div class="icon-bar-2">
+                <span id="play"><i class="far fa-play-circle"></i></span>
+            </div>
             <div class="progress-bar">
                 <span class="timer">0:25</span>
                 <div id="progress-bar">
@@ -246,16 +249,34 @@
                 </div>
                 <span class="timer">4:25</span>
             </div>
+            <!-- Media query 600px -->
+            <div class="progress-bar-2">
+                <span class="timer">0:25</span>
+                <span id="slash"> / </span>
+                <span class="timer">4:25</span>
+            </div>
         </div>
 
         <div class="col-dx">
-            <i class="fas fa-list"></i>
-            <i class="fas fa-desktop"></i>
+            <span class="none"><i class="fas fa-list"></i></span>
+            <span class="none"><i class="fas fa-desktop"></i></span>
             <div class="volume">
-                <i class="fas fa-volume-up"></i>
+                <span class="none"><i class="fas fa-volume-up"></i></span>
                 <div id="volume-bar">
                     <div class="volume-progress"></div>
                     <div class="range-vol"></div>
+                </div>
+                <!-- Media query 600px -->
+                <div class="vol-alt">
+                    <div class="vol-btn">
+                        <i class="fas fa-volume-up"></i>
+                        <div class="alt-vol-bar">
+                            <div class="bar-bg"></div>
+                            <div class="progress-bar-alt"></div>
+                            <div class="bar-progress-alt"></div>
+                            <div class="range-vol-alt"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
