@@ -572,7 +572,8 @@ footer {
 /* /Col Dx */
 
 /* MEDIA QUERY */
-/*size md */
+/* size standard: >1100 (ergo "lg") */
+/* size from lg to md */
 @media screen and (max-width: 1100px) {
     
     .row {
@@ -584,8 +585,8 @@ footer {
     }
 }
 
-/* size s */
-@media screen and (max-width: 600px) {
+/* size from md to s */
+@media screen and (max-width: 700px) {
     
     .row {
         flex-wrap: wrap;
@@ -596,7 +597,7 @@ footer {
     }
 }
 
-/* size xs */
+/* size s & xs */
 @media screen and (max-width: 600px) {
 
     :root {
