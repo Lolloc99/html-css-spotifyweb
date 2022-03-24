@@ -65,7 +65,6 @@ header {
     align-items: center;
     background-color: rgba(0, 0, 0, .3);
     width: calc(100% - var(--side-bar-width));
-    /* width: 100%; */
     height: 110px;
 }
 
@@ -100,10 +99,6 @@ header {
     width: var(--side-bar-width);
     height: 100%;
     overflow: hidden;
-}
-
-.pad {
-    padding: 0 1.5em;
 }
 
 /* Sidebar Top */
@@ -157,7 +152,8 @@ header {
     margin-left: .2em;
 }
 
-.text-sidebar:hover {
+.text-sidebar:hover,
+.selected-text {
     color: white;
 }
 
@@ -169,10 +165,6 @@ header {
 .unselected {
     padding: 0 1.5em;
     border-left: 3px solid transparent;
-}
-
-.selected-text {
-    color: white;
 }
 /* /Sezione1 */
 
@@ -199,6 +191,10 @@ header {
     padding: .4em .5em;
     margin-right: .3em;
     background-color: #a5a5a5;
+}
+
+.nav-playlist {
+    padding: 0 1.5em;
 }
 
 .list-title {
@@ -255,6 +251,11 @@ li {
     margin-right: .5em;
     background-color: grey;
 }
+
+.john:hover {
+    color: #91df1c;
+    cursor: pointer;
+}
 /* /Sidebar Bottom */
 /* /SIDEBAR */
 
@@ -282,7 +283,9 @@ main {
     margin: 1em;
 }
 
-.chosen {
+.chosen,
+.img,
+.vol-btn {
     position: relative;
 }
 
@@ -311,10 +314,6 @@ main {
     margin: 0 0.4em 2.5em 0.4em;
 }
 
-.img {
-    position: relative;
-}
-
 .layover::before {
     display: none;
     content: "";
@@ -322,7 +321,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 98.7%;
     background-color: rgba(0, 0, 0, .3);
 }
 
@@ -342,6 +341,7 @@ main {
 
 .img:hover .play-button {
     display: inline-block;
+    cursor: pointer;
 }
 
 .song-container-rounded img {
@@ -414,6 +414,7 @@ footer {
 
 .icon i {
     margin-right: .5em;
+    cursor: pointer;
 }
 
 .icon i:hover {
@@ -447,6 +448,7 @@ footer {
 .icon-bar-2 i{
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
 
 #play i {
@@ -500,6 +502,7 @@ footer {
     border: 8px solid white;
     background-color: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #progress-bar:hover .range{
@@ -544,6 +547,15 @@ footer {
     color: white;
 }
 
+.col-dx i {
+    cursor: pointer;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+}
+
 #volume-bar {
     position: relative;
     display: inline-block;
@@ -580,6 +592,7 @@ footer {
     border: 8px solid white;
     background-color: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #volume-bar:hover .range-vol {
@@ -587,12 +600,9 @@ footer {
 }
 
 /* Alternativa */
-.vol-alt {
+.vol-alt,
+.alt-vol-bar {
     display: none;
-}
-
-.vol-btn {
-    position: relative;
 }
 
 .bar-bg {
@@ -604,10 +614,6 @@ footer {
     border: 3px solid black;
     background-color: #292929;
     border-radius: 5px;
-}
-
-.alt-vol-bar {
-    display: none;
 }
 
 .vol-btn:hover .alt-vol-bar {
@@ -730,7 +736,8 @@ footer {
         align-items: center;
     }
 
-    .user-name {
+    .user-name,
+    .install-app img {
         margin: 0;
     }
 
@@ -741,10 +748,6 @@ footer {
 
     .install-app {
         border: none;
-    }
-
-    .install-app img {
-        margin: 0;
     }
 }
 
